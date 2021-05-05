@@ -1,3 +1,3 @@
-cp ~/.zshrc .
+cp ~/.zshrc_mark .
 cp ~/.vimrc .
-brew list > brew.txt
+brew list --formula > brew.txt

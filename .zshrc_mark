@@ -1,0 +1,26 @@
+# Env Vars
+export ZSH="$HOME/.oh-my-zsh"
+export ZSH_THEME="robbyrussell"
+
+# Alias
+alias c="clear"
+alias v="vim"
+alias dirsize="du -smc -- * | sort -n"
+alias pidport="lsof -nP -i4TCP:$1 | grep LISTEN"
+
+## Git
+alias g="git"
+
+# Oh-my-zsh plugins
+plugins=(
+    git
+    dnf
+    zsh-syntax-highlighting
+    zsh-autosuggestions
+    fzf
+    bgnotify
+    autojump
+    nvm
+)
+
+source $ZSH/oh-my-zsh.sh
